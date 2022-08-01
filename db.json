@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "test",
+      "last_name": "tester",
+      "email": "testemail@emailtest.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Alphonse",
+      "last_name": "Elric",
+      "email": "al@fullmetal.com"
+    },
+    {
+      "first_name": "Andrew",
+      "last_name": "Griffin",
+      "email": "peter@familyguy.com",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "testing_training",
+  "version": "1.0.0",
+  "description": "Internal training about automated testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "run:test"
+  },
+  "keywords": [
+    "testing",
+    "cypress"
+  ],
+  "author": "Daniel Rosales",
+  "license": "ISC"
+}
