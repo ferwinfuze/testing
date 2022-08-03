@@ -5,7 +5,7 @@ const queryTestDb = (query) => {
   const client = new Client({
     user: "postgres",
     host: "localhost",
-    database: "cypress_test",
+    database: "training_db",
     password: process.env.DBPASSWORD,
     port: 5432,
   });
@@ -27,27 +27,27 @@ const queryTestDb = (query) => {
 };
 
 const list = () => {
-  return queryTestDb("SELECT * FROM test_table");
+  return queryTestDb("SELECT * FROM training_table");
 };
 
 const read = (id) => {
-  return queryTestDb(`SELECT * FROM test_table WHERE id=${id}`);
+  return queryTestDb(`SELECT * FROM training_table WHERE id=${id}`);
 };
 
 const create = (body) => {
   return queryTestDb(
-    `INSERT INTO test_table (name, value) VALUES ('${body.name}', ${body.value})`
+    `INSERT INTO training_table (name, value) VALUES ('${body.name}', ${body.value})`
   );
 };
 
 const update = (id, body) => {
   return queryTestDb(
-    `UPDATE test_table SET name = '${body.name}', value = ${body.value} WHERE id = ${id}`
+    `UPDATE training_table SET name = '${body.name}', value = ${body.value} WHERE id = ${id}`
   );
 };
 
 const dbDelete = (id) => {
-  return queryTestDb(`DELETE FROM test_table WHERE id = ${id}`);
+  return queryTestDb(`DELETE FROM training_table WHERE id = ${id}`);
 };
 
 module.exports = {
