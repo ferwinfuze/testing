@@ -2,14 +2,14 @@
   "employees": [
     {
       "id": 1,
-      "first_name": "test",
+      "first_name": "Juanito",
       "last_name": "tester",
       "email": "testemail@emailtest.com"
     },
     {
       "id": 2,
-      "first_name": "Alphonse",
-      "last_name": "Elric",
+      "first_name": "Pepito",
+      "last_name": "Perez",
       "email": "al@fullmetal.com"
     },
     {
@@ -17,6 +17,12 @@
       "last_name": "Griffin",
       "email": "peter@familyguy.com",
       "id": 3
+    },
+    {
+      "first_name": "test 3",
+      "last_name": "tested",
+      "email": "test3email@emailtest.com",
+      "id": 4
     }
   ]
 }

@@ -4,12 +4,22 @@
   "description": "Internal training about automated testing",
   "main": "index.js",
   "scripts": {
-    "test": "run:test"
+    "test": "run:test",
+    "cy:open": "cypress open",
+    "run:server": "json-server --watch db.json"
   },
   "keywords": [
     "testing",
     "cypress"
   ],
   "author": "Daniel Rosales",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.6.0",
+    "cypress-dotenv": "^2.0.0",
+    "json-server": "^0.17.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
 }
